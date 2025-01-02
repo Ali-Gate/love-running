@@ -45,7 +45,7 @@ h1 {
     margin-bottom: 1em;
     margin-top: 0.7em;
 }
-.active{
+.active {
 border-bottom: 1px solid #3a3a3a;
 }
 
@@ -102,8 +102,22 @@ footer {
     #menu > li {
         padding-left: 1rem;
     }
-.nav-toggle-label {
+    .nav-toggle-label {
     display: none;
+    }
+    #logo {
+        font-size: 200%;
+        line-height: 75px;
+        margin: 0 0.5rem;
+    }
+    /*main content*/
+    main {
+        margin-top: 80px;
+    }
 }
-
+/* media query laptops and larger than 992px*/
+@media screen and (min-width: 992px) {
+#menu a:hover {
+    border-bottom: 1px solid #3a3a3a;
+    }
 }
