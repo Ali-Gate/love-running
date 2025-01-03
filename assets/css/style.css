@@ -95,6 +95,7 @@ footer {
         width: fit-content;
         padding-right: 1rem;    
     }
+    
     /*menu*/
     #menu {
         display: flex;
@@ -117,7 +118,10 @@ footer {
 }
 /* media query laptops and larger than 992px*/
 @media screen and (min-width: 992px) {
-#menu a:hover {
+    #menu a:hover {
     border-bottom: 1px solid #3a3a3a;
+    }
+    main {
+        margin-top: 75px;
     }
 }
