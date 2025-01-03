@@ -75,14 +75,16 @@ nav {
 }
 /*main content*/
 main {
-    background-color: lightblue;
-   
-
-/*Make main take up surplus space to push footer down*/
+    /*Make main take up surplus space to push footer down*/
     flex: 1 0 auto;
         margin-top: 50px;
 }
-    
+/*hero section*/ 
+#hero {
+    height: 600px;
+    width: 100%;
+    background-color: lightgreen;
+}
 /*Footer*/
 #socials {
 text-align: center;
