@@ -78,13 +78,25 @@ main {
     background-color: lightblue;
    
 
-    /*Make main take up surplus space to push footer down*/
+/*Make main take up surplus space to push footer down*/
     flex: 1 0 auto;
-    margin-top: 50px;
+        margin-top: 50px;
 }
-footer {
-    background-color: orange;
-} 
+    
+/*Footer*/
+#socials {
+text-align: center;
+padding: 20px 0;
+display: flex;
+justify-content: space-evenly;
+list-style-type: none;
+}
+#socials i {
+    font-size: 160%;
+    padding: 5%;
+    color: #3a3a3a;
+}
+
 /* media query tablets and larger than 768px*/
 @media screen and (min-width: 768px) {
     /*header*/
