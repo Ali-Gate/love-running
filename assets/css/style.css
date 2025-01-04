@@ -13,9 +13,14 @@
         /* General project styles  */
         color: #3a3a3a;
         font-family: "Montserrat", sans-serif;        
-    }
-
-header {
+}
+    h1, h2, h3 {
+        font-family: "Oswald", sans-serif;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        color: #252525;   
+}
+    header {
     background-color: #ffffff;
     padding: 0 1rem;
     position: fixed;
@@ -26,16 +31,11 @@ header {
     justify-content: space-between;
     align-items: baseline;
 }
-header a {
+    header a {
     text-decoration: none;
     color: inherit;
 }
-h1 {
-    font-family: "Oswald", sans-serif;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    color: #252525;   
-}
+
 #menu {
     font-size: 1.1em;
     letter-spacing: 2px;
@@ -83,7 +83,22 @@ main {
 #hero {
     height: 600px;
     width: 100%;
-    background-color: lightgreen;
+    background: url("../images/hero-image.webp") no-repeat center center/cover; 
+    position:relative;
+}
+#cover-text {
+    background-color: rgba(241, 109, 107, 0.7);
+    font-size: 130%;
+    position: absolute;
+    bottom: 30px;
+    width: 80%;
+    min-height: 200px;
+    padding-top: 40px;
+    padding-left: 10px;
+}
+
+#cover-text > h2, #cover-text > h3 {
+    color: #ffffff;
 }
 /*Footer*/
 #socials {
@@ -129,6 +144,11 @@ list-style-type: none;
     main {
         margin-top: 80px;
     }
+    /*hero*/
+    #cover-text {
+        width: 600px ;
+    right: 50px;
+    }
 }
 /* media query laptops and larger than 992px*/
 @media screen and (min-width: 992px) {
@@ -137,5 +157,10 @@ list-style-type: none;
     }
     main {
         margin-top: 75px;
+    }
+    /*hero*/
+    #cover-text {
+        width: 650px ;
+    right: 100px;
     }
 }
